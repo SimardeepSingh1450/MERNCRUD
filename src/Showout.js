@@ -8,7 +8,7 @@ const [newFoodName,setNewFoodName]=useState("");
      //Update Operation:
 const updateFood=(id)=>{
   console.log(id)
-  Axios.put("http://localhost:3001/update",{
+  Axios.put("https://merncrud1450.herokuapp.com/update",{
     id:id,
     newFoodName:newFoodName
   })
@@ -17,7 +17,7 @@ const updateFood=(id)=>{
      //Delete Operation:
 const deleteFood=(id)=>{
 
-  Axios.delete(`http://localhost:3001/delete/${id}`)
+  Axios.delete(`https://merncrud1450.herokuapp.com/delete/${id}`)
 }
 
 

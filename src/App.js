@@ -12,7 +12,7 @@ function App() {
  
   //Read Operation
   useEffect(()=>{
-    Axios.get("http://localhost:3001/read").then((response)=>{
+    Axios.get("https://merncrud1450.herokuapp.com/read").then((response)=>{
       console.log(response.data);
       setData(response.data);
     })
@@ -22,7 +22,7 @@ function App() {
 
  //Create Operation
   const addToList=()=>{
-    Axios.post('http://localhost:3001/insert',{
+    Axios.post('https://merncrud1450.herokuapp.com/insert',{
       foodName:foodName,
       days:days,
     });
